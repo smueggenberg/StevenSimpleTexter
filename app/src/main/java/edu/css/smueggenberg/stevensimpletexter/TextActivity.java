@@ -1,5 +1,7 @@
 package edu.css.smueggenberg.stevensimpletexter;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -76,7 +78,9 @@ public class TextActivity extends ActionBarActivity {
 
     //Sends a message to a specified phone number with a message using SMS
     public void sendMessage(String phoneNumber, String message){
-        SmsManager sms = SmsManager.getDefault();
-        sms.sendTextMessage(phoneNumber, null, message, null, null);
+        Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+        sendIntent.setData(Uri.parse("sms:" + phoneNumber));
+        sendIntent.putExtra("sms_body", message);
+        startActivity(sendIntent);
     }
 }
