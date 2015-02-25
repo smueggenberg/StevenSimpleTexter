@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StevenSimpleTexter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_text">TextActivity</string>
+
+    <string name="Select">Select someone to text</string>
+    <string name="or">OR</string>
+    <string name="MessageCustom">Send a custom message</string>
+    <string name="SendPresetMessage">Send</string>
+    <string name="SendCustomMessage">Send custom message</string>
+
+    <string name="TextMatt">Send Matt a text message</string>
+    <string name="TextBrian">Send Brian a text message</string>
+    <string name="TextTayler">Send Tayler a text message</string>
+    <string name="MessageSelect0">Select a message to send to Matt</string>
+    <string name="MessageSelect1">Select a message to send to Brian</string>
+    <string name="MessageSelect2">Select a message to send to Tayler</string>
+
+    <string-array name="messages">
+        <item>Hey what\'s up?</item>
+        <item>On my way</item>
+        <item>I\'ll call you back in a few minutes</item>
+        <item>Want to play online?</item>
+        <item>I\'ll talk to you later</item>
+    </string-array>
+</resources>
